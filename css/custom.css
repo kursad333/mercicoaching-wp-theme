@@ -1,0 +1,261 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+html {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    min-height: 100%;
+}
+
+.parallax {
+    background-image: url("../img/merve2.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    /*background-size: 40% auto;*/
+}
+
+.page-container {
+    margin-top: 80px;
+    position: relative;
+    min-height: 100%;
+}
+
+.content-wrap {
+    padding-bottom: 214px;
+}
+
+
+/* JUMBO 1 WEBSITE HEADER
+-------------------------------------------------- */
+
+.navbar {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#jumbo1 {
+    margin-bottom: 0;
+    height: 800px;
+    background: rgba(26, 26, 26, .5);
+}
+
+.jumbobuttons {
+    margin-top: 380px;
+    vertical-align: baseline;
+}
+
+.button {
+    display: inline-block;
+    transition-duration: 0.4s;
+    border-radius: 3px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 160px;
+    border: 1.1px solid #66a3ff;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #66a3ff; /* Green */
+    color: black;
+}
+
+/* JUMBO 2 COACHING
+-------------------------------------------------- */
+
+#jumbo2 {
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.marketingintro h1 {
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 15px;
+}
+
+.marketingintro a {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.marketing h2 {
+    /*font-weight: 600;*/
+}
+
+.marketing .col-lg-4 a {
+    margin-right: .75rem;
+    margin-left: .75rem;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.marketing .col-lg-4 h3 {
+    font-weight: 600;
+    font-size: 23px
+}
+
+.rounded {
+    border: 8px solid rgba(179, 179, 179, 0.25);
+    transition-duration: 0.2s;
+}
+
+.rounded:hover {
+    border: 6px solid rgba(51, 204, 255, 0.5);
+}
+
+
+/* JUMBO 3 ABOUT ME
+-------------------------------------------------- */
+
+#jumbo3 {
+    background: rgba(102, 102, 102, 0.9);
+    margin-bottom: 0;
+}
+
+.aboutheader {
+    color: white;
+    margin-bottom: 75px;
+    margin-top: 15px;
+}
+
+.aboutheader h1 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.aboutheader h6 {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.aboutme {
+    color: #d9d9d9;
+    margin-bottom: 50px;
+}
+
+.aboutme a {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.aboutme img {
+    width: 540px;
+    height: auto;
+}
+
+/* FOOTER
+-------------------------------------------------- */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 214px;
+    background-color: #f2f2f2;
+}
+
+.footer-wrap {
+    padding-top: 50px;
+    background-color: #f2f2f2;
+}
+
+.contact {
+    padding-bottom: 55px;
+}
+
+.icon {
+    margin-bottom: 12px;
+}
+
+.material-icons.md-40 {
+    font-size: 42px;
+}
+
+#icon-location {
+    color: #bf00ff
+}
+
+#icon-email {
+    color: #0066ff;
+}
+
+#icon-phone {
+    color: #33adff;
+}
+
+
+/* PAGE CSS
+-------------------------------------------------- */
+
+.contentheader {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.content {
+    padding: 30px;
+    border: 1.2px solid #cccccc
+}
+
+.content h1 {
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.content p {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.content-wrap {
+    margin-top: 140px;
+}
+
+
+/* STYLING
+-------------------------------------------------- */
+
+.main-underline-short h1:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 80px;
+    background: #b84dff;
+    margin: 8px 0 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-underline h3:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 120px;
+    background: #66a3ff;
+    margin: 10px 0 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
