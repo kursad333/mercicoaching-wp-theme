@@ -52,10 +52,10 @@ body {
 
 /* JUMBO 1 WEBSITE HEADER
 -------------------------------------------------- */
-
-.navbar {
+.navitems li span[itemprop="name"]{
     font-size: 14px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .brand {
