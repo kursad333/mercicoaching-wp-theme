@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav p-1" id="navbarNav">
                     <a class="nav-item nav-link active" href="#">HOME</a>
-                    <a class="nav-item nav-link " href="page.html">HOE WERKT HET?</a>
+                    <a class="nav-item nav-link " href="#">HOE WERKT HET?</a>
                     <a class="nav-item nav-link " href="#">KINDERCOACHING</a>
                     <a class="nav-item nav-link " href="#">VOLWASSEN COACHING</a>
                     <a class="nav-item nav-link " href="#">KOSTEN</a>
@@ -28,4 +28,4 @@
             </div>
         </div>
     </nav>
-</header>
+</header

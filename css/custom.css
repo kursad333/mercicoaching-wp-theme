@@ -250,6 +250,10 @@ body {
     margin-right: auto;
 }
 
+.main-underline-short{
+    text-transform: uppercase;
+}
+
 .section-underline h3:after {
     content: '';
     display: block;
