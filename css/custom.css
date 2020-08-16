@@ -23,7 +23,14 @@ body {
     margin-top: 150px;
     position: relative;
     min-height: 100%;
-    padding-bottom: 250px
+    padding-bottom: 270px
+}
+
+.front-page-container {
+    margin-top: 80px;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 214px
 }
 
 

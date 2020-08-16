@@ -1,13 +1,3 @@
-
-<?php
-/*
-Template Name: Voorpagina
-*/
-?>
-
-<?php get_header();?>
-
-
 <div class="front-page-container">
     <div class="parallax">
         <div class="jumbotron jumbotron-fluid" id="jumbo1">
@@ -108,6 +98,3 @@ Template Name: Voorpagina
         </div>
     </div>
 </div>
-
-
-<?php get_footer();?>
