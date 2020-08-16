@@ -245,7 +245,7 @@ body {
     margin-right: auto;
 }
 
-.main-underline-short{
+.contentheader > .main-underline-short{
     text-transform: uppercase;
 }
 
