@@ -90,7 +90,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 column aboutme">
-                        <img src="img/merve2.jpg" class="img-fluid " width="550" height="400">
+                        <img src="../../img/merve2.jpg"  class="img-fluid" width="550" height="400">
                     </div>
 
                 </div>
