@@ -1,5 +1,4 @@
 <div class="page-container">
-    <div class="page-content-wrap">
         <div class="container">
             <div class="col-md-12 content">
                 <div class="contentheader">
