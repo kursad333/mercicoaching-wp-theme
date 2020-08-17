@@ -21,7 +21,6 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
-    /*background-size: 40% auto;*/
 }
 
 .page-container {
@@ -37,8 +36,6 @@ body {
     min-height: 100%;
     padding-bottom: 214px
 }
-
-
 
 /* JUMBO 1 WEBSITE HEADER
 -------------------------------------------------- */
@@ -96,6 +93,7 @@ body {
     font-weight: 700;
     font-size: 45px;
     margin-top: 15px;
+
 }
 
 .marketingintro a {
@@ -116,7 +114,9 @@ body {
 
 .marketing .col-lg-4 h3 {
     font-weight: 600;
-    font-size: 23px
+    font-size: 23px;
+    /* text-transform: uppercase; */
+    
 }
 
 .rounded {

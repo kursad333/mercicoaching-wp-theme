@@ -67,7 +67,7 @@ Template Name: Voorpagina
         <div class="jumbotron jumbotron-fluid" id="jumbo3">
             <div class="container">
                 <div class="aboutheader text-center main-underline-short">
-                    <h1>OVER MIJ </h1>
+                    <h1>OVER MIJ</h1>
                     <h6>SAMEN KOM JE VERDER...</h6>
                 </div>
                 <div class="row">
