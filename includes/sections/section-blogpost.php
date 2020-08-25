@@ -13,6 +13,6 @@
                 endwhile; else: endif;
                 ?> <!-- END PHP -->
 
-            </div> <!-- END col-md-12 content -->
+            </div> <!-- END col-md-12 content --> 
         </div> <!-- END container -->
     </div> <!-- END page-container -->
