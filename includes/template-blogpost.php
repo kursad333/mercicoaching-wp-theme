@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Informatieve pagina
+Template Name: Blog post
 */
 ?>
 
