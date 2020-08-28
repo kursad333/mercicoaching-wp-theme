@@ -1,4 +1,4 @@
-<!-- <div class="page-container">
+<div class="page-container">
         <div class="container">
             <div class="col-md-12 content">
                 <div class="contentheader">
@@ -13,11 +13,6 @@
                 endwhile; else: endif;
                 ?> <!-- END PHP -->
 
-            </div> <!-- END col-md-12 content --> 
+            </div> <!-- END col-md-12 content -->
         </div> <!-- END container -->
-    <!-- </div> END page-container --> 
-
-
-
-<h1><?php the_title()?></h1>
-
+    </div> <!-- END page-container -->
