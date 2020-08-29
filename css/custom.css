@@ -1,8 +1,5 @@
 /* TEMP CSS */
 
-
-
-
 /* GLOBAL STYLES
 -------------------------------------------------- */
 html {
@@ -47,7 +44,7 @@ body {
 
 .brand {
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 #jumbo1 {
@@ -233,6 +230,28 @@ body {
     font-size: 16px;
     margin-bottom: 30px;
 }
+
+
+/* BLOG PAGE
+-------------------------------------------------- */
+
+#blog-title{
+    min-height: 112px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+
+#blog-title h1{
+    font-size: 27px;
+}
+
+#blog-image{
+    height: 200px;
+    background-size: cover;
+}
+
 
 /* STYLING
 -------------------------------------------------- */
