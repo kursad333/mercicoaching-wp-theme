@@ -25,7 +25,7 @@ function load_js()
 {
     wp_enqueue_script('jquery');
 
-    wp_register_script('bootstrapjs§', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
+    wp_register_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
     wp_enqueue_script('bootstrapjs');
 }
 add_action('wp_enqueue_scripts', 'load_js');
@@ -45,3 +45,9 @@ register_nav_menus(
         'top-menu' => 'Top Menu Location'
     )
 );
+
+
+// Sets the custom excerpt length
+add_filter( 'excerpt_length', function($length) {
+    return 60;
+} );

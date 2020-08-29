@@ -1,21 +1,16 @@
-<div class="page-container">
-        <div class="container">
-            <div class="col-md-12 content">
-                <div class="contentheader">
-                    <div class="main-underline-short">
-                        <h1>MERVE COACHING BLOG</h1>
+<?php // START PHP
+            if (have_posts() ): while (have_posts() ) : the_post();?>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="text-center">
+                        <h1><?php the_title();?></h1>
+                            </div>
+                        <?php the_excerpt();?>
+
+                        <a href="<?php the_permalink();?>" class="btn btn-success">Lees meer</a>
                     </div>
                 </div>
-                
-                <?php // START PHP
-if (have_posts() ): while (have_posts() ) : the_post();?>
+            </div>
 
-    <h1><?php the_title();?></h1>
-
-    <?php the_excerpt();?>
-    <a href="<?php the_permalink();?>">Read more</a>
-<?php endwhile; else: endif;?>
-
-            </div> <!-- END col-md-12 content -->
-        </div> <!-- END container -->
-    </div> <!-- END page-container -->
+            <?php endwhile; else: endif;?>
