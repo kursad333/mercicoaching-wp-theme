@@ -8,7 +8,7 @@ if (have_posts() ): while (have_posts() ) : the_post();?>
         </div>
 
         <div class='card-body' id="blog-image" 
-            style="background-image: url(https://www.me-to-we.nl/wp-content/uploads/2016/02/Basisschool.jpg)">
+            style="background-image: url(https://storage.pubble.nl/6a98e371/content/2018/4/fb18bd16-7fd1-434f-b5ba-d1bea265cac1_thumb840.jpg)">
         </div>
 
         <div class="card-body" id="blog-content">

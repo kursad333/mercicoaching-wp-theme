@@ -49,5 +49,5 @@ register_nav_menus(
 
 // Sets the custom excerpt length
 add_filter( 'excerpt_length', function($length) {
-    return 60;
+    return 75;
 } );

@@ -5,19 +5,19 @@
         <div class="col-md-12">
             <div class="contentheader">
                 <div class="main-underline-short">
-                    <h1>Merve's activiteiten blog</h1>
+                    <h1>BLOG</h1>
                 </div>
                 <a>Welkom op de activiteiten blog van Merve's Coaching.
                     Hier vind u tips & tricks rondom opvoeding van kinderen zowel als activiteiten die ik uitvoer met
                     mijn team
                 </a>
-                <hr>
             </div>
 
             <div class='row'>
                 <?php get_template_part('/includes/sections/section', 'archive');?>
             </div>
 
+            <hr> 
             <?php
                global $wp_query;
                $big = 999999999; //need an very unlikely integer

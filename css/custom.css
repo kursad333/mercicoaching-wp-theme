@@ -235,6 +235,14 @@ body {
 /* BLOG PAGE
 -------------------------------------------------- */
 
+
+
+
+
+
+
+
+
 #blog-title{
     min-height: 112px;
     display: flex;
@@ -248,8 +256,12 @@ body {
 }
 
 #blog-image{
-    height: 200px;
+    height: 220px;
     background-size: cover;
+}
+
+#blog-content{
+    min-height: 310px;
 }
 
 
