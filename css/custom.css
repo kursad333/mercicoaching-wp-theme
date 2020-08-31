@@ -1,5 +1,21 @@
 /* TEMP CSS */
 
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    min-height: 100%;
+}
+
+/* WEBSITE NAV
+-------------------------------------------------- */
 .topnav{
     /* background-color: rgb(102, 102, 102,0.8) */
     /* background-color: rgb(240, 179, 255); */
@@ -18,31 +34,15 @@
     color: red;
 }
 
-/* GLOBAL STYLES
--------------------------------------------------- */
-html {
-    position: relative;
-    min-height: 100%;
-}
-body {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    height: 100%;
-    min-height: 100%;
-}
 
+
+/* JUMBO 1 WEBSITE HEADER
+-------------------------------------------------- */
 .parallax {
     background-image: url("../img/merve2.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
-}
-
-.page-container {
-    margin-top: 145px;
-    position: relative;
-    min-height: 100%;
-    padding-bottom: 270px
 }
 
 .front-page-container {
@@ -51,10 +51,6 @@ body {
     min-height: 100%;
     padding-bottom: 214px
 }
-
-/* JUMBO 1 WEBSITE HEADER
--------------------------------------------------- */
-
 
 #jumbo1 {
     margin-bottom: 0;
@@ -218,7 +214,14 @@ body {
 /* PAGE CSS
 -------------------------------------------------- */
 
-.contentheader {
+.page-container {
+    margin-top: 145px;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 270px
+}
+
+.content-header {
     text-align: center;
     padding-bottom: 40px;
 }
@@ -243,7 +246,6 @@ body {
 
 /* BLOG PAGE
 -------------------------------------------------- */
-
 
 
 

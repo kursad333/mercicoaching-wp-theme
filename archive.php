@@ -3,7 +3,7 @@
 <div class="page-container">
     <div class="container">
         <div class="col-md-12">
-            <div class="contentheader">
+            <div class="content-header">
                 <div class="main-underline-short">
                     <h1>BLOG</h1>
                 </div>
@@ -12,7 +12,7 @@
                     mijn team
                 </a>
             </div>
-            
+
             <?php get_template_part('/includes/sections/section', 'archive');?>
 
             <hr> 
