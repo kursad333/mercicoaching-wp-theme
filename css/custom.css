@@ -1,5 +1,23 @@
 /* TEMP CSS */
 
+.topnav{
+    /* background-color: rgb(102, 102, 102,0.8) */
+    /* background-color: rgb(240, 179, 255); */
+    background-color: #e6e6e6;
+}
+
+.navitems li span[itemprop="name"]{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: red;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 html {
@@ -36,16 +54,7 @@ body {
 
 /* JUMBO 1 WEBSITE HEADER
 -------------------------------------------------- */
-.navitems li span[itemprop="name"]{
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
 
-.brand {
-    font-size: 18px;
-    font-weight: 700;
-}
 
 #jumbo1 {
     margin-bottom: 0;

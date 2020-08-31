@@ -12,12 +12,12 @@
                     mijn team
                 </a>
             </div>
-
-            <div class='row'>
-                <?php get_template_part('/includes/sections/section', 'archive');?>
-            </div>
+            
+            <?php get_template_part('/includes/sections/section', 'archive');?>
 
             <hr> 
+
+            <div class="text-center">
             <?php
                global $wp_query;
                $big = 999999999; //need an very unlikely integer
@@ -28,6 +28,7 @@
                 'total' => $wp_query->max_num_pages
                 ));
             ?>
+            </div>
 
         </div>
     </div>
