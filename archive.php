@@ -1,22 +1,23 @@
 <?php get_header();?>
 
-<div class="page-container">
+<div class="archive-container">
     <div class="container">
         <div class="col-md-12">
-            <div class="content-header">
-                <div class="main-underline-short">
-                    <h1>BLOG</h1>
+            <div class="archive-content-header">
+                <div class="main-underline-long">
+                    <h1>blog</h1>
                 </div>
-                <a>Welkom op de activiteiten blog van Merve's Coaching.
+                <p>Welkom op de activiteiten blog van Merve's Coaching.
                     Hier vind u tips & tricks rondom opvoeding van kinderen zowel als activiteiten die ik uitvoer met
                     mijn team
-                </a>
+                </p>
+            <hr>
             </div>
+            
 
             <?php get_template_part('/includes/sections/section', 'archive');?>
 
-            <hr> 
-
+            <hr>
             <div class="text-center">
             <?php
                global $wp_query;
@@ -29,7 +30,6 @@
                 ));
             ?>
             </div>
-
         </div>
     </div>
 </div>
