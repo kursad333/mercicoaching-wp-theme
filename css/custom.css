@@ -226,6 +226,24 @@ body {
     padding-bottom: 40px;
 }
 
+.page-content-header p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    /* padding-bottom: 10px; */
+}
+
+
+.authorblock{
+    /* background-color: red; */
+    height: 30px;
+}
+
+.authorblock p{
+    text-align: center;
+    font-size: 25px;
+}
+
 .content {
     padding: 22px;
     border: 1.2px solid #cccccc
@@ -319,8 +337,12 @@ body {
     margin-right: auto;
 }
 
-.page-content-header, .archive-content-header > .main-underline-short, .main-underline-long{
+.page-content-header, .archive-content-header > .main-underline-short h1, .main-underline-long h1{
     text-transform: uppercase;
+}
+
+.page-content-header p, .archive-content-header p > .main-underline-short, .main-underline-long{
+    text-transform: initial;
 }
 
 .section-underline h3:after {
