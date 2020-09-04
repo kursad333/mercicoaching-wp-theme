@@ -13,7 +13,7 @@
                 style="background-image: url(
                     <?php
                     if (has_post_thumbnail()){
-                        the_post_thumbnail_url();
+                        the_post_thumbnail_url('blog-thumbnail');
                     }
                     else
                         echo "https://storage.pubble.nl/6a98e371/content/2018/4/fb18bd16-7fd1-434f-b5ba-d1bea265cac1_thumb840.jpg"
@@ -25,7 +25,6 @@
             <div class="card-body" id="blog-content">
                 <?php the_excerpt();?>
                 <a href="<?php the_permalink();?>" class="btn btn-primary">Lees meer</a>
-                <a> <?php the_post_thumbnail_url();?>
             </div>
         </div>
     </div>
