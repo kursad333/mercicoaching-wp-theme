@@ -4,6 +4,10 @@
                 <div class="page-content-header">
                     <div class="main-underline-short">
                         <h1><?php the_title();?></h1>
+                        
+                            <?php if(has_post_thumbnail()):?>
+                                <h1>THIS HAS A THUMBNAIL PICTURE</h1>
+                            <?php endif;?>
                     </div>
                     <div class='authorblock'>
                         <p> 
