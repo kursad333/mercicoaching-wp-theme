@@ -107,7 +107,6 @@ function merci_front_page_buttons($wp_customize){
     ));
     
     $wp_customize->add_setting('merci-front-page-section-bone');
-
     $wp_customize->add_setting('merci-front-page-section-btwo');
 
     $wp_customize->add_setting('merci-front-page-section-bone-label', array(
@@ -117,13 +116,12 @@ function merci_front_page_buttons($wp_customize){
         'default' => 'CONTACT'
     ));
 
-
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-front-page-section-bone-label-control', array(
         'label' => 'Button one label',
         'section' => 'merci-front-page-buttons',
         'settings' => 'merci-front-page-section-bone-label',
     )));
-    
+
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-front-page-section-bone-control', array(
         'label' => 'Button one',
         'section' => 'merci-front-page-buttons',
@@ -150,5 +148,24 @@ add_action('customize_register', 'merci_front_page_buttons');
 
 
 
+function merci_front_page_header($wp_customize){
+    $wp_customize->add_section('merci-front-page-header', array(
+        'title' => 'Voorpagina achtergrond foto'
+    ));
+    
+    $wp_customize->add_setting('merci-front-page-header-image', array(
+        'default' => 'COACHING'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'merci-front-page-header-image-control', array(
+        'label' => 'Achtergrond foto',
+        'section' => 'merci-front-page-header',
+        'settings' => 'merci-front-page-header-image',
+        'width' => '1125',
+        'height' => '830'
+    )));
+};
+
+add_action('customize_register', 'merci_front_page_header');
 
 
