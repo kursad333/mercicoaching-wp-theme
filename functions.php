@@ -60,3 +60,4 @@ add_filter( 'excerpt_length', function($length) {
 add_image_size('blog-small', 400, 200, false);
 add_image_size('blog-large', 800, 400, false);
 add_image_size('blog-thumbnail', 400, 220, true);
+add_imagE_size('front-page-background', 1125, 830, true);

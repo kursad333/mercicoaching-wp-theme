@@ -39,7 +39,7 @@ body {
 /* JUMBO 1 WEBSITE HEADER
 -------------------------------------------------- */
 .parallax {
-    background-image: url("../img/merve2.jpg");
+    /* background-image: url("../img/merve2.jpg"); */
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;

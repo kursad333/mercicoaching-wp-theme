@@ -1,5 +1,14 @@
 <div class="front-page-container">
-    <div class="parallax">
+    <div class="parallax" style="background-image: url(
+                    <?php
+                    if (has_post_thumbnail()){
+                        the_post_thumbnail_url('front-page-background');
+                    }
+                    else
+                        echo "https://storage.pubble.nl/6a98e371/content/2018/4/fb18bd16-7fd1-434f-b5ba-d1bea265cac1_thumb840.jpg"
+                    ?>
+                    )">
+            <!-- </div> -->
         <div class="jumbotron jumbotron-fluid" id="jumbo1">
             <div class="container text-center mt-5">
                 <div class="jumbobuttons">
@@ -90,7 +99,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 column aboutme">
-                        <img src="../../img/merve2.jpg"  class="img-fluid" width="550" height="400">
+                        <img src="http://localhost:8888/wordpress/wp-content/uploads/2020/09/merve2.jpg"  class="img-fluid" width="550" height="400">
                     </div>
 
                 </div>
