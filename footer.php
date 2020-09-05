@@ -7,19 +7,19 @@
                     <div class="icon">
                         <i class="material-icons md-40" id="icon-location">place</i>
                     </div>
-                    <a>Evert van Manderstraat 40 <br>1942 CX Beverwijk</a>
+                    <a><?php echo get_theme_mod('merci-footer-callout-location');?></a>
                 </div>
                 <div class="col-md-3 text-center contact">
                     <div class="icon">
                         <i class="material-icons md-40" id="icon-email">email</i>
                     </div>
-                    <a>mercicoaching@info.nl</a>
+                    <a><?php echo get_theme_mod('merci-footer-callout-email');?></a>
                 </div>
                 <div class="col-md-3 text-center contact">
                     <div class="icon">
                         <i class="material-icons md-40" id="icon-phone">phone</i>
                     </div>
-                    <a>+31 6 40 18 38 90 <br> Ma t/m Vr - 10:00 - 18:00</a>
+                    <a><?php echo get_theme_mod('merci-footer-callout-phone');?></a>
                 </div>
             </div>
         </div>

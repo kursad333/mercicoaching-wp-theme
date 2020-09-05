@@ -60,4 +60,41 @@ add_filter( 'excerpt_length', function($length) {
 add_image_size('blog-small', 400, 200, false);
 add_image_size('blog-large', 800, 400, false);
 add_image_size('blog-thumbnail', 400, 220, true);
-add_imagE_size('front-page-background', 1125, 830, true);
+add_image_size('front-page-background', 1125, 830, true);
+
+
+// Add footer callout section to admin appearence customize screen
+
+function merci_footer_callout($wp_customize){
+    $wp_customize->add_section('merci-footer-callout', array(
+        'title' => 'Voettekst informatie'
+    ));
+
+    $wp_customize->add_setting('merci-footer-callout-location', array(
+        'default' => 'Evert van Manderstraat 1 <br>1234 AB Amsterdam'
+    ));
+    $wp_customize->add_setting('merci-footer-callout-email', array(
+        'default' => 'mijnemail@merci.nl'
+    ));
+    $wp_customize->add_setting('merci-footer-callout-phone', array(
+        'default' => '+31 6 12 34 56 78 <br> Ma t/m vr - 10:00 - 18:00'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-callout-location-control', array(
+        'label' => 'Adres',
+        'section' => 'merci-footer-callout',
+        'settings' => 'merci-footer-callout-location'
+    )));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-callout-email-control', array(
+        'label' => 'Email',
+        'section' => 'merci-footer-callout',
+        'settings' => 'merci-footer-callout-email'
+    )));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-callout-phone-control', array(
+        'label' => 'Telefoonnummer',
+        'section' => 'merci-footer-callout',
+        'settings' => 'merci-footer-callout-phone'
+    )));
+};
+
+add_action('customize_register', 'merci_footer_callout');
