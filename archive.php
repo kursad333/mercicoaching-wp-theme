@@ -15,7 +15,7 @@
             </div>
             
 
-            <?php get_template_part('/includes/sections/section', 'archive');?>
+            <?php get_template_part('/inc/sections/section', 'archive');?>
 
             <hr>
             <div class="text-center">
