@@ -77,6 +77,10 @@ body {
     font-weight: 600;
 }
 
+.button a{
+    text-transform: uppercase;
+}
+
 .button:hover {
     background-color: rgba(102, 163, 255, 0.9);
     color: white;
