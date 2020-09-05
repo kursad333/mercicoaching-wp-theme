@@ -65,9 +65,29 @@ add_image_size('front-page-background', 1125, 830, true);
 
 // Add footer callout section to admin appearence customize screen
 
+function create_frontpage_panels($wp_customize){
+    $wp_customize->add_panel('frontpage', array(
+        // 'priority' => 1,
+        'title' => 'Voorpagina'
+    ));
+
+    $wp_customize->add_panel('footer', array(
+        // 'priority' => 2,
+        'title' => 'Voettekst contactgegevens'
+    ));
+
+    $wp_customize->add_panel('topnav', array(
+        // 'priority' => 3,
+        'title' => 'Navigatie menu'
+    ));
+};
+
+add_action('customize_register', 'create_frontpage_panels');
+
 function merci_footer_section($wp_customize){
     $wp_customize->add_section('merci-footer-section', array(
-        'title' => 'Voettekst contact gegevens'
+        'title' => 'Voettekst contact gegevens',
+        'panel' => 'footer'
     ));
 
     $wp_customize->add_setting('merci-footer-section-location', array(
@@ -100,10 +120,10 @@ function merci_footer_section($wp_customize){
 add_action('customize_register', 'merci_footer_section');
 
 
-
 function merci_front_page_buttons($wp_customize){
     $wp_customize->add_section('merci-front-page-buttons', array(
-        'title' => 'Voorpagina buttons'
+        'title' => 'Voorpagina buttons',
+        'panel' => 'frontpage'
     ));
     
     $wp_customize->add_setting('merci-front-page-section-bone');
@@ -150,7 +170,8 @@ add_action('customize_register', 'merci_front_page_buttons');
 
 function merci_front_page_header($wp_customize){
     $wp_customize->add_section('merci-front-page-header', array(
-        'title' => 'Voorpagina achtergrond foto'
+        'title' => 'Voorpagina achtergrond foto',
+        'panel' => 'frontpage'
     ));
     
     $wp_customize->add_setting('merci-front-page-header-image', array(
@@ -167,5 +188,3 @@ function merci_front_page_header($wp_customize){
 };
 
 add_action('customize_register', 'merci_front_page_header');
-
-
