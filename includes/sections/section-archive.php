@@ -30,6 +30,3 @@
     </div>
     <?php endwhile; else: endif;?>
 </div>
-
-
-<!-- https://storage.pubble.nl/6a98e371/content/2018/4/fb18bd16-7fd1-434f-b5ba-d1bea265cac1_thumb840.jpg -->
