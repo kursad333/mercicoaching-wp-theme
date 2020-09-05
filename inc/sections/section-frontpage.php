@@ -72,7 +72,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 column">
                         <div class="aboutme">
-                            <a>Mijn naam is Henrie. Ruim 15 jaar heb ik gewerkt in de kinderopvang, waarvan 8
+                            <a>Mijn naam is Maria. Ruim 15 jaar heb ik gewerkt in de kinderopvang, waarvan 8
                                 jaar als
                                 pedagogisch medewerker en 7 jaar als zelfstandig gastouder. Ik heb in mijn werk veel
                                 kinderen en
