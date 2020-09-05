@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-
+    </div>
 
         <div class="jumbotron jumbotron-fluid" id="jumbo3">
             <div class="container">

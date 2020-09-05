@@ -65,12 +65,12 @@ body {
 
 .button {
     display: inline-block;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     border-radius: 3px;
     padding-top: 13px;
     padding-bottom: 13px;
     width: 160px;
-    border: 1.1px solid #66a3ff;
+    border: 1.1px solid rgb(102, 163, 255);
     background-color: rgba(255, 255, 255, 0.25);
     color: white;
     font-size: 14px;
@@ -78,8 +78,8 @@ body {
 }
 
 .button:hover {
-    background-color: #66a3ff; /* Green */
-    color: black;
+    background-color: rgba(102, 163, 255, 0.9);
+    color: white;
 }
 
 /* JUMBO 2 COACHING
@@ -133,8 +133,47 @@ body {
 
 /* JUMBO 3 ABOUT ME
 -------------------------------------------------- */
-
 #jumbo3 {
+    /* background: rgba(148, 95, 233, 0.9); */
+    background: rgba(120, 87, 173, 0.9);
+    margin-bottom: 0;
+}
+
+.aboutheader {
+    color: white;
+    margin-bottom: 75px;
+    margin-top: 15px;
+}
+
+.aboutheader h1 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.aboutheader h6 {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.aboutme {
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.aboutme a {
+    font-weight: 300;
+    font-size: 14.5px;
+}
+
+.aboutme img {
+    width: 540px;
+    height: auto;
+}
+
+
+
+/* #jumbo3 {
     background: rgba(128, 128, 128, 0.9);
     margin-bottom: 0;
 }
@@ -169,7 +208,7 @@ body {
 .aboutme img {
     width: 540px;
     height: auto;
-}
+} */
 
 /* FOOTER
 -------------------------------------------------- */
