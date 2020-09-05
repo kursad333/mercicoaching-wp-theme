@@ -134,7 +134,7 @@ body {
 /* JUMBO 3 ABOUT ME
 -------------------------------------------------- */
 #jumbo3 {
-    /* background: rgba(148, 95, 233, 0.9); */
+    /* background: rgba(120, 87, 173, 0.8); */
     background: rgba(120, 87, 173, 0.9);
     margin-bottom: 0;
 }
@@ -336,12 +336,8 @@ body {
     margin-right: auto;
 }
 
-.page-content-header, .archive-content-header > .main-underline-short h1, .main-underline-long h1{
+.page-content-header h1, .archive-content-header h1 > .main-underline-short h1, .main-underline-long h1{
     text-transform: uppercase;
-}
-
-.page-content-header p, .archive-content-header p > .main-underline-short, .main-underline-long{
-    text-transform: initial;
 }
 
 .section-underline h3:after {
