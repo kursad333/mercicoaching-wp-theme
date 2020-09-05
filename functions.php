@@ -65,36 +65,36 @@ add_image_size('front-page-background', 1125, 830, true);
 
 // Add footer callout section to admin appearence customize screen
 
-function merci_footer_callout($wp_customize){
-    $wp_customize->add_section('merci-footer-callout', array(
-        'title' => 'Voettekst informatie'
+function merci_footer_section($wp_customize){
+    $wp_customize->add_section('merci-footer-section', array(
+        'title' => 'Voettekst contact gegevens'
     ));
 
-    $wp_customize->add_setting('merci-footer-callout-location', array(
+    $wp_customize->add_setting('merci-footer-section-location', array(
         'default' => 'Evert van Manderstraat 1 <br>1234 AB Amsterdam'
     ));
-    $wp_customize->add_setting('merci-footer-callout-email', array(
+    $wp_customize->add_setting('merci-footer-section-email', array(
         'default' => 'mijnemail@merci.nl'
     ));
-    $wp_customize->add_setting('merci-footer-callout-phone', array(
+    $wp_customize->add_setting('merci-footer-section-phone', array(
         'default' => '+31 6 12 34 56 78 <br> Ma t/m vr - 10:00 - 18:00'
     ));
 
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-callout-location-control', array(
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-section-location-control', array(
         'label' => 'Adres',
-        'section' => 'merci-footer-callout',
-        'settings' => 'merci-footer-callout-location'
+        'section' => 'merci-footer-section',
+        'settings' => 'merci-footer-section-location'
     )));
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-callout-email-control', array(
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-section-email-control', array(
         'label' => 'Email',
-        'section' => 'merci-footer-callout',
-        'settings' => 'merci-footer-callout-email'
+        'section' => 'merci-footer-section',
+        'settings' => 'merci-footer-section-email'
     )));
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-callout-phone-control', array(
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-section-phone-control', array(
         'label' => 'Telefoonnummer',
-        'section' => 'merci-footer-callout',
-        'settings' => 'merci-footer-callout-phone'
+        'section' => 'merci-footer-section',
+        'settings' => 'merci-footer-section-phone'
     )));
 };
 
-add_action('customize_register', 'merci_footer_callout');
+add_action('customize_register', 'merci_footer_section');

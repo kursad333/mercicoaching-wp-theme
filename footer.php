@@ -7,19 +7,19 @@
                     <div class="icon">
                         <i class="material-icons md-40" id="icon-location">place</i>
                     </div>
-                    <a><?php echo get_theme_mod('merci-footer-callout-location');?></a>
+                    <a><?php echo get_theme_mod('merci-footer-section-location');?></a>
                 </div>
                 <div class="col-md-3 text-center contact">
                     <div class="icon">
                         <i class="material-icons md-40" id="icon-email">email</i>
                     </div>
-                    <a><?php echo get_theme_mod('merci-footer-callout-email');?></a>
+                    <a><?php echo get_theme_mod('merci-footer-section-email');?></a>
                 </div>
                 <div class="col-md-3 text-center contact">
                     <div class="icon">
                         <i class="material-icons md-40" id="icon-phone">phone</i>
                     </div>
-                    <a><?php echo get_theme_mod('merci-footer-callout-phone');?></a>
+                    <a><?php echo get_theme_mod('merci-footer-section-phone');?></a>
                 </div>
             </div>
         </div>
