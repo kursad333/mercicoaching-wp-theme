@@ -4,14 +4,10 @@
         <div class="container">
             <div class="col-md-12">
                 <div class="archive-content-header">
-                    <div class="main-underline-long">
-                        <h1>blog</h1>
+                    <div class="main-underline-long uppercase">
+                        <h1><?php echo get_theme_mod('merci-blog-page-header');?></h1>
                     </div>
-                    <p>Welkom op de activiteiten blog van Merve's Coaching.
-                        Hier vind u tips & tricks rondom opvoeding van kinderen zowel als activiteiten die ik uitvoer
-                        met
-                        mijn team
-                    </p>
+                    <p><?php echo get_theme_mod('merci-blog-page-bio');?></p>
                     <hr>
                 </div>
 

@@ -86,9 +86,9 @@ function create_frontpage_panels($wp_customize)
         'title' => 'Navigatie menu'
     ));
 
-    $wp_customize->add_panel('showcase', array(
+    $wp_customize->add_panel('blog', array(
         // 'priority' => 3,
-        'title' => 'Marketing onderdeel'
+        'title' => 'Blog pagina'
     ));
 }
 
@@ -168,7 +168,7 @@ add_action('customize_register', 'merci_front_page_header');
 
 
 // Section to customize the whole marketing section
-function merci_front_page_showcase($wp_customize)
+function merci_front_page_marketing($wp_customize)
 {
     $wp_customize->add_section('merci-front-page-showcase', array(
         'title' => 'Marketing onderdeel',
@@ -307,7 +307,7 @@ function merci_front_page_showcase($wp_customize)
 }
 
 ;
-add_action('customize_register', 'merci_front_page_showcase');
+add_action('customize_register', 'merci_front_page_marketing');
 
 
 function merci_aboutme($wp_customize)
@@ -409,3 +409,41 @@ function merci_footer_section($wp_customize)
 
 ;
 add_action('customize_register', 'merci_footer_section');
+
+// 
+// BLOG PAGE CUSTOMIZER
+//
+
+
+function merci_blog_page($wp_customize){
+    $wp_customize->add_section('merci-blog-page-head', array(
+        'title' => 'Blog pagina',
+    ));
+
+    $wp_customize->add_setting('merci-blog-page-header', array(
+        'default' => 'Lorem ipsum'
+    ));
+    $wp_customize->add_setting('merci-blog-page-bio', array(
+        'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat condimentum elit sed tincidunt. Etiam ac pellentesque arcu, eget imperdiet sapien. Praesent quam ante'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-blog-page-header-control', array(
+        'label' => 'Koptekst',
+        'section' => 'merci-blog-page-head',
+        'settings' => 'merci-blog-page-header'
+    )));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-blog-page-bio-control', array(
+        'label' => 'Biografie',
+        'section' => 'merci-blog-page-head',
+        'settings' => 'merci-blog-page-bio',
+        'type' => 'textarea'
+    )));
+};
+add_action('customize_register', 'merci_blog_page');
+
+
+
+function merci_nav_men_brand($wp_customize){
+    
+};
+add_action('customize_register', 'merci_nav_menu_brand');
