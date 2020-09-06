@@ -166,10 +166,8 @@ function merci_front_page_background_image($wp_customize)
         'width' => '1125',
         'height' => '830'
     )));
-}
-
-;
-add_action('customize_register', 'merci_front_page_frontpage_image');
+};
+add_action('customize_register', 'merci_front_page_background_image');
 
 
 // Section to customize the whole marketing section
