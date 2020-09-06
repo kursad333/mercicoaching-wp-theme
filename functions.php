@@ -443,7 +443,19 @@ add_action('customize_register', 'merci_blog_page');
 
 
 
-function merci_nav_men_brand($wp_customize){
-    
+function merci_nav_menu_brand($wp_customize){
+    $wp_customize->add_section('merci-nav-menu-brand', array(
+        'title' => 'Navigatiemenu',
+    ));
+
+    $wp_customize->add_setting('merci-blog-page-header', array(
+        'default' => 'Mercimek <br> Coaching'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-blog-page-header-control', array(
+        'label' => 'Koptekst',
+        'section' => 'merci-blog-page-head',
+        'settings' => 'merci-blog-page-header'
+    )));
 };
 add_action('customize_register', 'merci_nav_menu_brand');
