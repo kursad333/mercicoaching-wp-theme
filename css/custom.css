@@ -1,6 +1,10 @@
 /* TEMP CSS */
 
 
+.mod-upper{
+    text-transform: uppercase;   
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 html {
