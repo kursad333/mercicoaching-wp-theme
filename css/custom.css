@@ -1,10 +1,5 @@
 /* TEMP CSS */
 
-
-.mod-upper{
-    text-transform: uppercase;   
-}
-
 /* GLOBAL STYLES
 -------------------------------------------------- */
 html {
@@ -321,6 +316,9 @@ body {
 
 /* STYLING
 -------------------------------------------------- */
+.mod-upper{
+    text-transform: uppercase;   
+}
 
 .main-underline-long h1:after {
     content: '';
