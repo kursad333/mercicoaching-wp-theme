@@ -166,7 +166,9 @@ function merci_front_page_background_image($wp_customize)
         'width' => '1125',
         'height' => '830'
     )));
-};
+}
+
+;
 add_action('customize_register', 'merci_front_page_background_image');
 
 
@@ -311,6 +313,65 @@ function merci_front_page_showcase($wp_customize)
 
 ;
 add_action('customize_register', 'merci_front_page_showcase');
+
+
+function merci_aboutme($wp_customize)
+{
+    $wp_customize->add_section('merci-aboutme', array(
+        'title' => 'Over mij onderdeel',
+        'panel' => 'frontpage'
+    ));
+
+    //Sets the header of the about me section
+    $wp_customize->add_setting('merci-aboutme-header', array(
+        'default' => 'OVER MIJ'
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-aboutme-header-control', array(
+        'label' => 'Hoofdtekst van dit onderdeel',
+        'section' => 'merci-aboutme',
+        'settings' => 'merci-aboutme-header',
+    )));
+
+    //Sets the bio under the header
+    $wp_customize->add_setting('merci-aboutme-bio', array(
+        'default' => 'Samen kom je verder...'
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-aboutme-bio-control', array(
+        'label' => 'Biografie van de koptekst',
+        'section' => 'merci-aboutme',
+        'settings' => 'merci-aboutme-bio',
+    )));
+
+
+    //This is the short paragraph of the about me sction
+    $wp_customize->add_setting('merci-aboutme-paragraph', array(
+        'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper diam sit amet est pharetra, a pulvinar lacus mattis. Proin tristique volutpat erat, quis efficitur turpis aliquam at. Nunc elementum justo placerat quam pulvinar, eget rhoncus ipsum scelerisque. Nam eu mi a velit scelerisque feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam faucibus quam non odio vehicula, ut elementum metus posuere. Vestibulum ac metus felis. Mauris dolor ligula, viverra at nunc quis, congue sodales erat. Phasellus blandit vehicula elementum.'
+    ));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-aboutme-paragraph-control', array(
+        'label' => 'Tekst van dit onderdeel',
+        'section' => 'merci-aboutme',
+        'settings' => 'merci-aboutme-paragraph',
+        'type' => 'textarea'
+    )));
+
+
+    //Sets the picture for the about me
+    $wp_customize->add_setting('merci-aboutme-image', array(
+        'default' => 'HEADING'
+    ));
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'merci-aboutme-image-control', array(
+        'label' => 'Foto over dit onderdeel',
+        'section' => 'merci-aboutme',
+        'settings' => 'merci-aboutme-image',
+        'width' => '550',
+        'height' => '400'
+    )));
+
+
+}
+
+;
+add_action('customize_register', 'merci_aboutme');
 
 
 function merci_footer_section($wp_customize)
