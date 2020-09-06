@@ -68,7 +68,6 @@ add_image_size('front-page-background', 1125, 830, true);
 
 // WORDPRESS CUSTOMIZER API
 
-
 //Create the panels for all all customizable sections
 function create_frontpage_panels($wp_customize)
 {
@@ -96,20 +95,26 @@ function create_frontpage_panels($wp_customize)
 ;
 add_action('customize_register', 'create_frontpage_panels');
 
+// 
+// FRONT PAGE CUSTOMIZER
+//
 
 
-// Section to customize the custom parallax background
+// Section to customize the custom parallax background and navigation buttons
 function merci_front_page_header($wp_customize)
 {
+    // Creates section for the front page header
     $wp_customize->add_section('merci-front-page-header', array(
         'title' => 'Hoofd onderdeel',
         'panel' => 'frontpage'
     ));
 
+    //adds setting for the background image to be set
     $wp_customize->add_setting('merci-front-page-header-image', array(
         'default' => 'COACHING'
     ));
 
+    //adds the ability to set the background image with custom size
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'merci-front-page-header-image-control', array(
         'label' => 'Achtergrond foto',
         'section' => 'merci-front-page-header',
@@ -118,9 +123,11 @@ function merci_front_page_header($wp_customize)
         'height' => '830'
     )));
 
+    // these add the setting for the two navigation buttons on the frontpage
     $wp_customize->add_setting('merci-front-page-section-bone');
     $wp_customize->add_setting('merci-front-page-section-btwo');
 
+    //These add the settins for the label on the buttons
     $wp_customize->add_setting('merci-front-page-section-bone-label', array(
         'default' => 'COACHING'
     ));
@@ -128,12 +135,13 @@ function merci_front_page_header($wp_customize)
         'default' => 'CONTACT'
     ));
 
+    // adds the actual control to set text as the button label
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-front-page-section-bone-label-control', array(
         'label' => 'Button one label',
         'section' => 'merci-front-page-header',
         'settings' => 'merci-front-page-section-bone-label',
     )));
-
+    //adds the control to select where the button navigates to
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-front-page-section-bone-control', array(
         'label' => 'Button one',
         'section' => 'merci-front-page-header',
@@ -141,7 +149,6 @@ function merci_front_page_header($wp_customize)
         'type' => 'dropdown-pages'
 
     )));
-
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-front-page-section-btwo-label-control', array(
         'label' => 'Button two label',
         'section' => 'merci-front-page-header',
@@ -347,6 +354,7 @@ function merci_aboutme($wp_customize)
     $wp_customize->add_setting('merci-aboutme-image', array(
         'default' => 'HEADING'
     ));
+    //adds the control to set and crop a custom sized image
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'merci-aboutme-image-control', array(
         'label' => 'Foto over dit onderdeel',
         'section' => 'merci-aboutme',
@@ -364,11 +372,13 @@ add_action('customize_register', 'merci_aboutme');
 
 function merci_footer_section($wp_customize)
 {
+    //adds the section for the footer
     $wp_customize->add_section('merci-footer-section', array(
         'title' => 'Voettekst contact gegevens',
         // 'panel' => 'footer'
     ));
 
+    //creates setting for the three footer elements
     $wp_customize->add_setting('merci-footer-section-location', array(
         'default' => 'Evert van Manderstraat 1 <br>1234 AB Amsterdam'
     ));
@@ -379,6 +389,7 @@ function merci_footer_section($wp_customize)
         'default' => '+31 6 12 34 56 78 <br> Ma t/m vr - 10:00 - 18:00'
     ));
 
+    //adds the actual control to edit the elements
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-section-location-control', array(
         'label' => 'Adres',
         'section' => 'merci-footer-section',
