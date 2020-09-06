@@ -18,7 +18,7 @@
 
         <div class="jumbotron jumbotron-fluid" id="jumbo2">
             <div class="container text-center marketingintro main-underline-short">
-                <h1 class="display-4 mod-upper"><?php echo get_theme_mod('merci-front-page-showcase-header') ?></h1>
+                <h1 class="uppercase"><?php echo get_theme_mod('merci-front-page-showcase-header') ?></h1>
                 <a class="mb-5"> <?php echo get_theme_mod('merci-front-page-showcase-paragraph'); ?></a>
             </div>
 
@@ -29,21 +29,21 @@
                         <img class="rounded mb-4"
                              src="<?php echo wp_get_attachment_url(get_theme_mod('merci-front-page-showcase-image1')); ?>"
                              alt="Generic placeholder image" width="200" height="200">
-                        <h3 class="mod-upper"><?php echo get_theme_mod('merci-front-page-showcase-image-header1'); ?></h3>
+                        <h3 class="uppercase"><?php echo get_theme_mod('merci-front-page-showcase-image-header1'); ?></h3>
                         <a><?php echo get_theme_mod('merci-front-page-showcase-paragraph1'); ?></a>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4 section-underline">
                         <img class="rounded mb-4"
                              src="<?php echo wp_get_attachment_url(get_theme_mod('merci-front-page-showcase-image2')); ?>"
                              alt="Generic placeholder image" width="200" height="200">
-                        <h3 class="mod-upper"><?php echo get_theme_mod('merci-front-page-showcase-image-header2'); ?></h3>
+                        <h3 class="uppercase"><?php echo get_theme_mod('merci-front-page-showcase-image-header2'); ?></h3>
                         <a><?php echo get_theme_mod('merci-front-page-showcase-paragraph2'); ?></a>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4 section-underline">
                         <img class="rounded mb-4"
                              src="<?php echo wp_get_attachment_url(get_theme_mod('merci-front-page-showcase-image3')); ?>"
                              alt="Generic placeholder image" width="200" height="200">
-                        <h3 class="mod-upper"><?php echo get_theme_mod('merci-front-page-showcase-image-header3'); ?></h3>
+                        <h3 class="uppercase"><?php echo get_theme_mod('merci-front-page-showcase-image-header3'); ?></h3>
                         <a><?php echo get_theme_mod('merci-front-page-showcase-paragraph3'); ?></a>
                     </div><!-- /.col-lg-4 -->
                 </div>
@@ -53,7 +53,7 @@
 
     <div class="jumbotron jumbotron-fluid" id="jumbo3">
         <div class="container">
-            <div class="aboutheader mod-upper text-center main-underline-short">
+            <div class="aboutheader uppercase text-center main-underline-short">
                 <h1><?php echo get_theme_mod('merci-aboutme-header'); ?></h1>
                 <h6><?php echo get_theme_mod('merci-aboutme-bio'); ?></h6>
             </div>

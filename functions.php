@@ -296,7 +296,7 @@ function merci_front_page_showcase($wp_customize)
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-front-page-showcase-image-header3-control', array(
         'label' => 'Hoofdtekst van kop 3',
         'section' => 'merci-front-page-showcase',
-        'settings' => 'merci-front-page-showcase-image-header2',
+        'settings' => 'merci-front-page-showcase-image-header3',
     )));
 
     $wp_customize->add_setting('merci-front-page-showcase-paragraph3', array(
@@ -306,7 +306,7 @@ function merci_front_page_showcase($wp_customize)
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-front-page-showcase-header-paragraph3-control', array(
         'label' => 'Tekst van kop 3',
         'section' => 'merci-front-page-showcase',
-        'settings' => 'merci-front-page-showcase-paragraph2',
+        'settings' => 'merci-front-page-showcase-paragraph3',
         'type' => 'textarea'
     )));
 }
