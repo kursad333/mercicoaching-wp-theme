@@ -6,11 +6,11 @@
                 <div class="jumbobuttons">
                     <a href="<?php echo get_permalink(get_theme_mod('merci-front-page-section-bone')); ?>">
                         <button type="button"
-                                class="btn btn-primary button mr-3"><?php echo get_theme_mod('merci-front-page-section-bone-label'); ?></button>
+                                class="btn btn-primary button mr-3 uppercase"><?php echo get_theme_mod('merci-front-page-section-bone-label'); ?></button>
                     </a>
                     <a href="<?php echo get_permalink(get_theme_mod('merci-front-page-section-btwo')); ?>">
                         <button type="button"
-                                class="btn btn-primary button mr-3"> <?php echo get_theme_mod('merci-front-page-section-btwo-label'); ?> </button>
+                                class="btn btn-primary button mr-3 uppercase"> <?php echo get_theme_mod('merci-front-page-section-btwo-label'); ?> </button>
                     </a>
                 </div>
             </div>
