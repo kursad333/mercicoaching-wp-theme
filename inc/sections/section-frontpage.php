@@ -54,17 +54,18 @@
     <div class="jumbotron jumbotron-fluid" id="jumbo3">
         <div class="container">
             <div class="aboutheader mod-upper text-center main-underline-short">
-                <h1><?php echo get_theme_mod('merci-aboutme-header');?></h1>
-                <h6><?php echo get_theme_mod('merci-aboutme-bio');?></h6>
+                <h1><?php echo get_theme_mod('merci-aboutme-header'); ?></h1>
+                <h6><?php echo get_theme_mod('merci-aboutme-bio'); ?></h6>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6 column">
                     <div class="aboutme">
-                        <a><?php echo get_theme_mod('merci-aboutme-paragraph')?></a>
+                        <a><?php echo get_theme_mod('merci-aboutme-paragraph') ?></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 column aboutme">
-                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('merci-aboutme-image')); ?>" class="img-fluid"
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('merci-aboutme-image')); ?>"
+                         class="img-fluid"
                          width="550" height="400">
                 </div>
             </div>
