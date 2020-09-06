@@ -6,6 +6,7 @@ html {
     position: relative;
     min-height: 100%;
 }
+
 body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -15,13 +16,13 @@ body {
 
 /* WEBSITE NAV
 -------------------------------------------------- */
-.topnav{
+.topnav {
     /* background-color: rgb(102, 102, 102,0.8) */
     /* background-color: rgb(240, 179, 255); */
     background-color: #e6e6e6;
 }
 
-.navitems li span[itemprop="name"]{
+.navitems li span[itemprop="name"] {
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
@@ -32,7 +33,6 @@ body {
     font-weight: 700;
     color: red;
 }
-
 
 
 /* JUMBO 1 WEBSITE HEADER
@@ -76,7 +76,7 @@ body {
     font-weight: 600;
 }
 
-.button a{
+.button a {
     text-transform: uppercase;
 }
 
@@ -121,7 +121,7 @@ body {
     font-weight: 600;
     font-size: 23px;
     /* text-transform: uppercase; */
-    
+
 }
 
 .rounded {
@@ -229,20 +229,20 @@ body {
     padding-bottom: 40px;
 }
 
-.page-content-header p{
+.page-content-header p {
     text-align: center;
     font-size: 15px;
     font-weight: 500;
 }
 
 
-.authorblock{
+.authorblock {
     height: 30px;
 }
 
-.authorblock p{
+.authorblock p {
     text-align: center;
-    font-size: 17px !important; 
+    font-size: 17px !important;
     font-weight: 500 !important;
 }
 
@@ -266,25 +266,25 @@ body {
 
 /* ARCHIVE PAGE
 -------------------------------------------------- */
-.archive-container{
+.archive-container {
     margin-top: 145px;
     position: relative;
     min-height: 100%;
     padding-bottom: 270px
 }
 
-.archive-content-header{
+.archive-content-header {
     text-align: center;
     padding-top: 22px;
     padding-bottom: 25px;
 }
 
-.archive-content-header h1{
+.archive-content-header h1 {
     font-weight: 600;
     font-size: 38px;
 }
 
-.archive-content-header p{
+.archive-content-header p {
     text-align: center;
     font-weight: 500;
     font-size: 18px;
@@ -292,32 +292,32 @@ body {
     padding-bottom: 25px;
 }
 
-#blog-title{
+#blog-title {
     min-height: 104px;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-#blog-title h1{
+#blog-title h1 {
     font-size: 24px;
 }
 
-#blog-image{
+#blog-image {
     height: 220px;
     background-size: cover;
 }
 
-#blog-content{
+#blog-content {
     min-height: 310px;
 }
 
 
 /* STYLING
 -------------------------------------------------- */
-.mod-upper{
-    text-transform: uppercase;   
+.mod-upper {
+    text-transform: uppercase;
 }
 
 .main-underline-long h1:after {
@@ -342,7 +342,7 @@ body {
     margin-right: auto;
 }
 
-.page-content-header h1, .archive-content-header h1 > .main-underline-short h1, .main-underline-long h1{
+.page-content-header h1, .archive-content-header h1 > .main-underline-short h1, .main-underline-long h1 {
     text-transform: uppercase;
 }
 
