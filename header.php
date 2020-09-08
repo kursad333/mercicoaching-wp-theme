@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top topnav" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand brand" href="http://localhost:8888/wordpress">
+            <a class="navbar-brand brand" href="<?php get_bloginfo('wpurl');?>">
                 <?php echo get_bloginfo('name');?>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
