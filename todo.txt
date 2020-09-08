@@ -1,0 +1,15 @@
+WORDPRESS THEME - MERCI COACHING
+
+TO DO:
+
+BLOG:
+- Custom sizes to choose from when making a new blog post
+
+HEADER:
+- Header 'brand' should redirect to homepage
+- Header 'brand' should be user changable including breaklines
+	opt:
+- Header brand in different color which is user changeable
+- Header brand could be in different font 
+
+
