@@ -1,5 +1,18 @@
 /* TEMP CSS */
 
+.page-error{
+    padding-top: 400px;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-size: 50px
+}
+
+.page-error h1{
+    font-size: 100px;
+}
+.page-error p{
+    font-size: 40px;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 html {
@@ -32,6 +45,7 @@ body {
 }
 
 .brand {
+    font-family: 18px;
     font-size: 18px;
     font-weight: 700;
     color: red;
@@ -192,6 +206,13 @@ body {
 
 .contact {
     padding-bottom: 55px;
+    text-decoration: none;
+    color: black;
+}
+
+.contact a{
+    text-decoration: none;
+    /* color: #5151fc; */
 }
 
 .icon {
@@ -264,7 +285,6 @@ body {
     margin-bottom: 30px;
 }
 
-
 /* ARCHIVE PAGE
 -------------------------------------------------- */
 .archive-container {
@@ -309,6 +329,11 @@ body {
     font-size: 16px;
     margin-bottom: 30px;
 }
+.blog-content img{
+    border: 5px solid red;
+    max-width: 100%;
+    height: auto;
+}
 
 #blog-title {
     min-height: 104px;
@@ -329,6 +354,21 @@ body {
 
 #blog-excerpt {
     min-height: 300px;
+}
+
+/* 404 PAGE
+-------------------------------------------------- */
+.page-error{
+    padding-top: 400px;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-size: 50px
+}
+
+.page-error h1{
+    font-size: 100px;
+}
+.page-error p{
+    font-size: 40px;
 }
 
 
