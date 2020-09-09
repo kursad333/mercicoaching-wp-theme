@@ -27,21 +27,45 @@
                 <div class="row">
                     <div class="col-lg-4 section-underline">
                         <img class="rounded mb-4"
-                             src="<?php echo wp_get_attachment_url(get_theme_mod('merci-front-page-showcase-image1')); ?>"
+                             src="<?php
+
+                             if (!get_theme_mod('merci-front-page-showcase-image1')) {
+                                 $path = bloginfo('template_url') . '/img/marketing-default.jpg';
+                                 echo $path;
+                             } else {
+                                 echo wp_get_attachment_url(get_theme_mod('merci-front-page-showcase-image1'));
+                             }
+                             ?>"
                              alt="Generic placeholder image" width="200" height="200">
                         <h3 class="uppercase"><?php echo get_theme_mod('merci-front-page-showcase-image-header1'); ?></h3>
                         <a><?php echo get_theme_mod('merci-front-page-showcase-paragraph1'); ?></a>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4 section-underline">
                         <img class="rounded mb-4"
-                             src="<?php echo wp_get_attachment_url(get_theme_mod('merci-front-page-showcase-image2')); ?>"
+                             src="<?php
+
+                             if (!get_theme_mod('merci-front-page-showcase-image2')) {
+                                 $path = bloginfo('template_url') . '/img/marketing-default.jpg';
+                                 echo $path;
+                             } else {
+                                 echo wp_get_attachment_url(get_theme_mod('merci-front-page-showcase-image2'));
+                             }
+                             ?>"
                              alt="Generic placeholder image" width="200" height="200">
                         <h3 class="uppercase"><?php echo get_theme_mod('merci-front-page-showcase-image-header2'); ?></h3>
                         <a><?php echo get_theme_mod('merci-front-page-showcase-paragraph2'); ?></a>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4 section-underline">
                         <img class="rounded mb-4"
-                             src="<?php echo wp_get_attachment_url(get_theme_mod('merci-front-page-showcase-image3')); ?>"
+                             src="<?php
+
+                             if (!get_theme_mod('merci-front-page-showcase-image3')) {
+                                 $path = bloginfo('template_url') . '/img/marketing-default.jpg';
+                                 echo $path;
+                             } else {
+                                 echo wp_get_attachment_url(get_theme_mod('merci-front-page-showcase-image3'));
+                             }
+                             ?>"
                              alt="Generic placeholder image" width="200" height="200">
                         <h3 class="uppercase"><?php echo get_theme_mod('merci-front-page-showcase-image-header3'); ?></h3>
                         <a><?php echo get_theme_mod('merci-front-page-showcase-paragraph3'); ?></a>

@@ -201,7 +201,7 @@ function merci_front_page_marketing($wp_customize)
 
     //This sets the picture of the column
     $wp_customize->add_setting('merci-front-page-showcase-image1', array(
-        'default' => 'COACHING'
+        'default' => 'EMPTY'
     ));
     //Different WP class for the image control with custom image size
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'merci-front-showcase-image1-control', array(
@@ -352,7 +352,7 @@ function merci_aboutme($wp_customize)
 
     //Sets the picture for the about me
     $wp_customize->add_setting('merci-aboutme-image', array(
-        'default' => 'HEADING'
+        'default' => 'EMPTY'
     ));
     //adds the control to set and crop a custom sized image
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'merci-aboutme-image-control', array(
