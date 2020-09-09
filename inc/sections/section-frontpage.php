@@ -18,7 +18,7 @@
                     </a>
                     <a href="<?php echo get_permalink(get_theme_mod('merci-front-page-section-btwo')); ?>">
                         <button type="button"
-                                class="btn btn-primary button mr-3 uppercase"> <?php echo get_theme_mod('merci-front-page-section-btwo-label'); ?> </button>
+                                class="btn btn-primary button uppercase"> <?php echo get_theme_mod('merci-front-page-section-btwo-label'); ?> </button>
                     </a>
                 </div>
             </div>

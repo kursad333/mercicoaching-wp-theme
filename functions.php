@@ -60,10 +60,24 @@ add_filter('excerpt_length', function ($length) {
 
 
 // Custom image sizes
+
+//Custom image sizes for blog posts
 add_image_size('blog-small', 400, 200, false);
-add_image_size('blog-large', 800, 400, false);
+add_image_size('blog-medium', 500, 300, false);
+add_image_size('blog-large', 800, 600, true);
+// Custom image sizes for the blog archive thumbnail
 add_image_size('blog-thumbnail', 400, 220, true);
-add_image_size('front-page-background', 1125, 830, true);
+
+// Adds the functionality to choose one of the custom image sizes in the wordpress menu
+add_filter('image_size_names_choose', 'wpshout_custom_sizes');
+function wpshout_custom_sizes($sizes)
+{
+    return array_merge($sizes, array(
+        'blog-small' => __('Blog klein'),
+        'blog-medium' => __('Blog medium'),
+        'blog-large' => __('Blog groot'),
+    ));
+}
 
 
 // WORDPRESS CUSTOMIZER API
@@ -420,7 +434,7 @@ function merci_blog_page($wp_customize)
     $wp_customize->add_section('merci-blog-page-head', array(
         'title' => 'Blog pagina',
     ));
-    
+
     $wp_customize->add_setting('merci-blog-page-header', array(
         'default' => 'Lorem ipsum'
     ));

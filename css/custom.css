@@ -39,7 +39,6 @@ body {
 /* JUMBO 1 WEBSITE HEADER
 -------------------------------------------------- */
 .parallax {
-    /* background-image: url("../img/merve2.jpg"); */
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
@@ -138,7 +137,6 @@ body {
 /* JUMBO 3 ABOUT ME
 -------------------------------------------------- */
 #aboutme {
-    /* background: rgba(120, 87, 173, 0.8); */
     background: rgba(120, 87, 173, 0.9);
     margin-bottom: 0;
 }
@@ -293,10 +291,11 @@ body {
     padding-bottom: 25px;
 }
 
-.blog-content{
+.blog-content {
     padding: 22px;
     border: 1.2px solid #d2cdfc;
 }
+
 .blog-content h1 {
     padding-top: 25px;
     font-weight: 700;
