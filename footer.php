@@ -27,10 +27,10 @@ else{
                 <div class="icon">
                     <i class="material-icons md-40" id="icon-location">place</i>
                 </div>
-                <a href="<?php echo $addressurl;?>">
-                <?php echo $address; ?>
-                <br>
-                <?php echo $area ?>
+                <a href="<?php echo $addressurl;?>" target="blank">
+                    <?php echo $address; ?>
+                    <br>
+                    <?php echo $area ?>
                 </a>         
             </div>
             <div class="col-md-3 text-center contact">

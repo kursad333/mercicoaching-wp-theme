@@ -31,12 +31,10 @@
             </div>
 
             <div class="container marketing mt-5">
-                <!-- Three columns of text below the carousel -->
                 <div class="row">
                     <div class="col-lg-4 section-underline">
                         <img class="rounded mb-4"
                              src="<?php
-
                              if (!get_theme_mod('merci-front-page-showcase-image1')) {
                                  $path = bloginfo('template_url') . '/img/marketing-default.jpg';
                                  echo $path;
