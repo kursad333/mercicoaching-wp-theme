@@ -1,6 +1,6 @@
 <div class="page-container">
     <div class="container">
-        <div class="col-md-12 content">
+        <div class="col-md-12 blog-content">
             <div class="page-content-header">
                 <div class="main-underline-short">
                     <h1><?php the_title(); ?></h1>

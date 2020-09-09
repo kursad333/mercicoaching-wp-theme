@@ -249,7 +249,7 @@ body {
 
 .content {
     padding: 22px;
-    border: 1.2px solid #cccccc
+    border: 1.2px solid #ebebeb
 }
 
 .content h1 {
@@ -291,6 +291,22 @@ body {
     font-size: 18px;
     padding-top: 10px;
     padding-bottom: 25px;
+}
+
+.blog-content{
+    padding: 22px;
+    border: 1.2px solid #d2cdfc;
+}
+.blog-content h1 {
+    padding-top: 25px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.blog-content p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
 
 #blog-title {
