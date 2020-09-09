@@ -13,7 +13,6 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top topnav" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <a class="navbar-brand brand" href="<?php get_bloginfo('wpurl');?>">
                 <?php echo get_bloginfo('name');?>
             </a>
@@ -22,7 +21,6 @@
                     aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- <a class="navbar-brand brand" href="#">Mercimek<br>Coaching</a> -->
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'top-menu',

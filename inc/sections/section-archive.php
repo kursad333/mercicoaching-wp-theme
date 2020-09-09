@@ -23,9 +23,11 @@
                 </div>
 
 
-                <div class="card-body" id="blog-content">
+                <div class="card-body" id="blog-excerpt">
                     <?php the_excerpt(); ?>
-                    <a href="<?php the_permalink(); ?>" class="btn btn-primary">Lees meer</a>
+                    <div class="read-more">
+                        <a href="<?php the_permalink(); ?>" class="btn btn-primary">Lees meer</a>
+                    </div>
                 </div>
             </div>
         </div>
