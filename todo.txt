@@ -8,6 +8,7 @@ opt CUSTOMIZER:
 BLOG:
 done - Custom sizes to choose from when making a new blog post IMAGES
 - set the 'lees meer' on a fixed position
+- user uploaded images must be in a fluid image bootstrap thing
 
 opt HEADER:
 - Header 'brand' should redirect to homepage

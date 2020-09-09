@@ -393,31 +393,47 @@ function merci_footer_section($wp_customize)
     ));
 
     //creates setting for the three footer elements
-    $wp_customize->add_setting('merci-footer-section-location', array(
-        'default' => 'Evert van Manderstraat 1 <br>1234 AB Amsterdam'
+    $wp_customize->add_setting('merci-footer-section-location-address', array(
+        'default' => 'Evert van Manderstraat 1'
+    ));
+    $wp_customize->add_setting('merci-footer-section-location-area', array(
+        'default' => '1234 AB Amsterdam'
     ));
     $wp_customize->add_setting('merci-footer-section-email', array(
         'default' => 'mijnemail@merci.nl'
     ));
-    $wp_customize->add_setting('merci-footer-section-phone', array(
-        'default' => '+31 6 12 34 56 78 <br> Ma t/m vr - 10:00 - 18:00'
+    $wp_customize->add_setting('merci-footer-section-phone-number', array(
+        'default' => '+31 6 12 34 56 78'
+    ));
+    $wp_customize->add_setting('merci-footer-section-phone-times', array(
+        'default' => 'Ma t/m vr - 10:00 - 18:00'
     ));
 
     //adds the actual control to edit the elements
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-section-location-control', array(
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-section-location-address-control', array(
         'label' => 'Adres',
         'section' => 'merci-footer-section',
-        'settings' => 'merci-footer-section-location'
+        'settings' => 'merci-footer-section-location-address'
+    )));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-section-location-area-control', array(
+        'label' => 'Plaats',
+        'section' => 'merci-footer-section',
+        'settings' => 'merci-footer-section-location-area'
     )));
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-section-email-control', array(
         'label' => 'Email',
         'section' => 'merci-footer-section',
         'settings' => 'merci-footer-section-email'
     )));
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-section-phone-control', array(
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-section-phone-nunber-control', array(
         'label' => 'Telefoonnummer',
         'section' => 'merci-footer-section',
-        'settings' => 'merci-footer-section-phone'
+        'settings' => 'merci-footer-section-phone-number'
+    )));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-footer-section-phone-times-control', array(
+        'label' => 'Contact tijden',
+        'section' => 'merci-footer-section',
+        'settings' => 'merci-footer-section-phone-times'
     )));
 }
 
