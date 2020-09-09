@@ -88,7 +88,14 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 column aboutme">
-                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('merci-aboutme-image')); ?>"
+                    <img src="<?php
+                    if (!get_theme_mod('merci-aboutme-image')) {
+                        $path = bloginfo('template_url') . '/img/aboutme-default.jpg';
+                        echo $path;
+                    } else {
+                        echo wp_get_attachment_url(get_theme_mod('merci-aboutme-image'));
+                    }
+                    ?>"
                          class="img-fluid"
                          width="550" height="400">
                 </div>
