@@ -2,22 +2,21 @@ WORDPRESS THEME - MERCI COACHING
 
 TO DO:
 
-CUSTOMIZER:
+opt CUSTOMIZER:
 -Let the user choose a color scheme and apply these colors on the underlines and page border
 
 BLOG:
-- Custom sizes to choose from when making a new blog post IMAGES
+done - Custom sizes to choose from when making a new blog post IMAGES
 
 
-HEADER:
+opt HEADER:
 - Header 'brand' should redirect to homepage
 - Header 'brand' should be user changable including breaklines
 	opt:
 - Header brand in different color which is user changeable
 - Header brand could be in different font 
 
-HOME:
 
 CODE:
--Rename the ID's of all section elements on frontpage from jumbo1,2,3 to header, marketing, aboutme
+done -Rename the ID's of all section elements on frontpage from jumbo1,2,3 to header, marketing, aboutme
 
