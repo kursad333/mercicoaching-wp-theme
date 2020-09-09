@@ -52,7 +52,7 @@ body {
     padding-bottom: 214px
 }
 
-#jumbo1 {
+#header {
     margin-bottom: 0;
     height: 800px;
     background: rgba(26, 26, 26, .5);
@@ -89,7 +89,7 @@ body {
 /* JUMBO 2 COACHING
 -------------------------------------------------- */
 
-#jumbo2 {
+#marketing {
     background-color: white;
     margin-top: 0;
     margin-bottom: 0;
@@ -137,7 +137,7 @@ body {
 
 /* JUMBO 3 ABOUT ME
 -------------------------------------------------- */
-#jumbo3 {
+#aboutme {
     /* background: rgba(120, 87, 173, 0.8); */
     background: rgba(120, 87, 173, 0.9);
     margin-bottom: 0;

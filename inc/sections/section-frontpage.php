@@ -9,7 +9,7 @@
              echo wp_get_attachment_url(get_theme_mod('merci-front-page-header-image'));
          }
          ?>">
-        <div class="jumbotron jumbotron-fluid" id="jumbo1">
+        <div class="jumbotron jumbotron-fluid" id="header">
             <div class="container text-center mt-5">
                 <div class="jumbobuttons">
                     <a href="<?php echo get_permalink(get_theme_mod('merci-front-page-section-bone')); ?>">
@@ -24,7 +24,7 @@
             </div>
         </div>
 
-        <div class="jumbotron jumbotron-fluid" id="jumbo2">
+        <div class="jumbotron jumbotron-fluid" id="marketing">
             <div class="container text-center marketingintro main-underline-short">
                 <h1 class="uppercase"><?php echo get_theme_mod('merci-front-page-showcase-header') ?></h1>
                 <a class="mb-5"> <?php echo get_theme_mod('merci-front-page-showcase-paragraph'); ?></a>
@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid" id="jumbo3">
+    <div class="jumbotron jumbotron-fluid" id="aboutme">
         <div class="container">
             <div class="aboutheader uppercase text-center main-underline-short">
                 <h1><?php echo get_theme_mod('merci-aboutme-header'); ?></h1>
