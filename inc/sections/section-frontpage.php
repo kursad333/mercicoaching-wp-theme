@@ -1,6 +1,14 @@
 <div class="front-page-container">
     <div class="parallax"
-         style="background-image: url(<?php echo wp_get_attachment_url(get_theme_mod('merci-front-page-header-image')) ?>)">
+         style="background-image: url(
+        <?php
+         if (!get_theme_mod('merci-front-page-header-image')) {
+             $path = bloginfo('template_url') . '/img/parallax-default.jpg';
+             echo $path;
+         } else {
+             echo wp_get_attachment_url(get_theme_mod('merci-front-page-header-image'));
+         }
+         ?>">
         <div class="jumbotron jumbotron-fluid" id="jumbo1">
             <div class="container text-center mt-5">
                 <div class="jumbobuttons">
