@@ -19,7 +19,9 @@ body {
 .topnav {
     /* background-color: rgb(102, 102, 102,0.8) */
     /* background-color: rgb(240, 179, 255); */
-    background-color: #e6e6e6;
+    /* background-color: #e6e6e6; */
+    background-color: rgba(244, 240, 255, 0.95);
+    
     min-height: 80px;
 }
 
@@ -293,7 +295,7 @@ body {
 
 .blog-content {
     padding: 22px;
-    border: 1.2px solid #d2cdfc;
+    border: 1.2px solid #e3e0ff;
 }
 
 .blog-content h1 {
