@@ -103,7 +103,6 @@
                         width="550" 
                         height="400"
                         alt="Over mij">
-
                 </img>
                 </div>
             </div>

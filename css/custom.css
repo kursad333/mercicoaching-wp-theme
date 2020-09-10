@@ -237,7 +237,6 @@ body {
     font-weight: 500;
 }
 
-
 .authorblock {
     height: 30px;
 }
@@ -341,7 +340,7 @@ body {
 -------------------------------------------------- */
 .page-error{
     min-height: 104px;
-    padding-top: 210px;  /* font-family: 'Roboto Mono', monospace; */
+    padding-top: 210px; 
     font-size: 50px
 }
 
