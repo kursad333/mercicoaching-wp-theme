@@ -6,10 +6,6 @@
             <h1>404</h1>
             <hr>
             <p>Oeps... Deze pagina is niet gevonden.</p>
-
-
-
-
         </div>
     </div>
 </div>

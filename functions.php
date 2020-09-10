@@ -126,7 +126,7 @@ function merci_front_page_header($wp_customize)
 
     //adds setting for the background image to be set
     $wp_customize->add_setting('merci-front-page-header-image', array(
-        'default' => 'COACHING'
+        'default' => 'empty'
     ));
 
     //adds the ability to set the background image with custom size
@@ -144,7 +144,7 @@ function merci_front_page_header($wp_customize)
 
     //These add the settins for the label on the buttons
     $wp_customize->add_setting('merci-front-page-section-bone-label', array(
-        'default' => 'COACHING'
+        'default' => 'coaching'
     ));
     $wp_customize->add_setting('merci-front-page-section-btwo-label', array(
         'default' => 'CONTACT'
@@ -192,7 +192,7 @@ function merci_front_page_marketing($wp_customize)
 
     //This is the heading of the marketing section
     $wp_customize->add_setting('merci-front-page-showcase-header', array(
-        'default' => 'COACHING'
+        'default' => 'empty'
     ));
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-front-page-showcase-header-control', array(
         'label' => 'Hoofdtekst',
@@ -288,7 +288,7 @@ function merci_front_page_marketing($wp_customize)
 
     //START PICTURE 3 //
     $wp_customize->add_setting('merci-front-page-showcase-image3', array(
-        'default' => 'COACHING'
+        'default' => 'empty'
     ));
 
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'merci-front-showcase-image3-control', array(
