@@ -30,11 +30,7 @@ body {
 /* WEBSITE NAV
 -------------------------------------------------- */
 .topnav {
-    /* background-color: rgb(102, 102, 102,0.8) */
-    /* background-color: rgb(240, 179, 255); */
-    /* background-color: #e6e6e6; */
     background-color: rgba(244, 240, 255, 0.95);
-    
     min-height: 80px;
 }
 
@@ -114,7 +110,7 @@ body {
     font-weight: 700;
     font-size: 45px;
     margin-top: 15px;
-
+    text-transform: uppercase;
 }
 
 .marketingintro a {
@@ -136,8 +132,7 @@ body {
 .marketing .col-lg-4 h3 {
     font-weight: 600;
     font-size: 23px;
-    /* text-transform: uppercase; */
-
+    text-transform: uppercase;
 }
 
 .rounded {
@@ -330,7 +325,7 @@ body {
     margin-bottom: 30px;
 }
 .blog-content img{
-    border: 5px solid red;
+    border: 2px solid grey;
     max-width: 100%;
     height: auto;
 }
