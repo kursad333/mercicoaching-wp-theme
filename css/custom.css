@@ -94,7 +94,6 @@ body {
     font-weight: 700;
     font-size: 45px;
     margin-top: 15px;
-    text-transform: uppercase;
 }
 
 .marketingintro a {
@@ -116,7 +115,6 @@ body {
 .marketing .col-lg-4 h3 {
     font-weight: 600;
     font-size: 23px;
-    text-transform: uppercase;
 }
 
 .rounded {
@@ -192,7 +190,6 @@ body {
 
 .contact a{
     text-decoration: none;
-    /* color: #5151fc; */
 }
 
 .icon {
@@ -228,7 +225,7 @@ body {
 
 .page-content-header {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 
 .page-content-header p {
@@ -354,7 +351,7 @@ body {
 
 /* STYLING
 -------------------------------------------------- */
-.main-underline-long, .main-underline-short, .section-underline{
+.main-underline-long h1, .main-underline-short h1, .section-underline h3{
     text-transform: uppercase;
 }
 
@@ -367,7 +364,6 @@ body {
     margin: 8px 0 20px 0;
     margin-left: auto;
     margin-right: auto;
-    text-transform: uppercase;
 }
 
 .main-underline-short h1:after {
