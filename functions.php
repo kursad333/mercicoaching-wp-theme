@@ -384,6 +384,10 @@ function merci_aboutme($wp_customize)
 ;
 add_action('customize_register', 'merci_aboutme');
 
+//
+// FOOTER
+//
+
 
 function merci_footer_section($wp_customize)
 {
@@ -478,20 +482,34 @@ function merci_blog_page($wp_customize)
 add_action('customize_register', 'merci_blog_page');
 
 
+//
+// NAVIGATION MENU BRAND
+//
+
 function merci_nav_menu_brand($wp_customize)
 {
-    $wp_customize->add_section('merci-nav-menu-brand', array(
-        'title' => 'Navigatiemenu',
+    $wp_customize->add_section('merci-nav-menu', array(
+        'title' => 'Navigatie bedrijfsnaam',
     ));
 
-    $wp_customize->add_setting('merci-blog-page-header', array(
-        'default' => 'Mercimek <br> Coaching'
+    $wp_customize->add_setting('merci-nav-menu-brand-line1', array(
+        'default' => 'Mercimek'
     ));
 
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-blog-page-header-control', array(
-        'label' => 'Koptekst',
-        'section' => 'merci-blog-page-head',
-        'settings' => 'merci-blog-page-header'
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-nav-menu-brand-line1-control', array(
+        'label' => 'Site naam - lijn 1',
+        'section' => 'merci-nav-menu',
+        'settings' => 'merci-nav-menu-brand-line1'
+    )));
+
+    $wp_customize->add_setting('merci-nav-menu-brand-line2', array(
+        'default' => 'Coaching'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'merci-nav-menu-brand-line2-control', array(
+        'label' => 'Site naam - lijn 2',
+        'section' => 'merci-nav-menu',
+        'settings' => 'merci-nav-menu-brand-line2'
     )));
 }
 
