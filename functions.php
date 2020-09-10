@@ -1,5 +1,9 @@
 <?php
 
+// 
+// WORDPRESS SETUP FUNCTIONS
+//
+
 
 // Load stylesheets
 function load_css()
@@ -45,21 +49,21 @@ add_theme_support('menus');
 add_theme_support('post-thumbnails');
 
 
-// Menus
+// Navigation menus
 register_nav_menus(
     array(
         'top-menu' => 'Top Menu Location'
     )
 );
 
+//
+// CUSTOM WORDRPESS SETTINGS
+//
 
-// Sets the custom excerpt length
+// Sets the custom excerpt length for blog archivew
 add_filter('excerpt_length', function ($length) {
     return 75;
 });
-
-
-// Custom image sizes
 
 //Custom image sizes for blog posts
 add_image_size('blog-small', 400, 200, false);
@@ -79,29 +83,26 @@ function wpshout_custom_sizes($sizes)
     ));
 }
 
-
-// WORDPRESS CUSTOMIZER API
+//
+// WORDPRESS CUSTOMIZER SETUP
+//
 
 //Create the panels for all all customizable sections
 function create_frontpage_panels($wp_customize)
 {
     $wp_customize->add_panel('frontpage', array(
-        // 'priority' => 1,
         'title' => 'Voorpagina'
     ));
 
     $wp_customize->add_panel('footer', array(
-        // 'priority' => 2,
         'title' => 'Voettekst contactgegevens'
     ));
 
     $wp_customize->add_panel('topnav', array(
-        // 'priority' => 3,
         'title' => 'Navigatie menu'
     ));
 
     $wp_customize->add_panel('blog', array(
-        // 'priority' => 3,
         'title' => 'Blog pagina'
     ));
 }

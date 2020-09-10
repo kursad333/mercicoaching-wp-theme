@@ -29,17 +29,13 @@
                 <h1><?php echo get_theme_mod('merci-front-page-showcase-header') ?></h1>
                 <a class="mb-5"> <?php echo get_theme_mod('merci-front-page-showcase-paragraph'); ?></a>
             </div>
-
-            <?php //variable for better readability
-            $marketingdefault = bloginfo('template_url') . '/img/marketing-default.jpg';
-            ?>
-
             <div class="container marketing mt-5">
                 <div class="row">
                     <div class="col-lg-4 section-underline">
                         <img class="rounded mb-4"
                              src="<?php
                              if (!get_theme_mod('merci-front-page-showcase-image1')) {
+                                 $marketingdefault = bloginfo('template_url') . '/img/marketing-default.jpg';
                                  echo $marketingdefault;
                              } else {
                                  echo wp_get_attachment_url(get_theme_mod('merci-front-page-showcase-image1'));
@@ -52,7 +48,7 @@
                     <div class="col-lg-4 section-underline">
                         <img class="rounded mb-4"
                              src="<?php
-
+                             $marketingdefault = bloginfo('template_url') . '/img/marketing-default.jpg';
                              if (!get_theme_mod('merci-front-page-showcase-image2')) {
                                  echo $marketingdefault;
                              } else {
@@ -66,6 +62,7 @@
                     <div class="col-lg-4 section-underline">
                         <img class="rounded mb-4"
                              src="<?php
+                             $marketingdefault = bloginfo('template_url') . '/img/marketing-default.jpg';
                              if (!get_theme_mod('merci-front-page-showcase-image3')) {
                                  echo $marketingdefault;
                              } else {
