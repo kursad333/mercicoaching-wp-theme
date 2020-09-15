@@ -188,7 +188,7 @@ body {
     color: black;
 }
 
-.contact a{
+.contact a {
     text-decoration: none;
 }
 
@@ -246,13 +246,17 @@ body {
 
 .content {
     padding: 22px;
-    border: 1.2px solid #ebebeb
+    border: 1.3px solid #ebebeb
 }
 
 .content h1 {
     padding-top: 25px;
     font-weight: 700;
     font-size: 32px;
+}
+
+.content h2, h3, h4, h5, h6 {
+    margin-bottom: 12px;
 }
 
 .content p {
@@ -305,7 +309,8 @@ body {
     font-size: 16px;
     margin-bottom: 30px;
 }
-.blog-content img{
+
+.blog-content img {
     border: 2px solid grey;
     max-width: 100%;
     height: auto;
@@ -335,23 +340,30 @@ body {
 
 /* 404 PAGE
 -------------------------------------------------- */
-.page-error{
+.page-error {
     min-height: 104px;
-    padding-top: 210px; 
+    padding-top: 210px;
     font-size: 50px
 }
 
-.page-error h1{
+.page-error h1 {
     font-size: 100px;
 }
-.page-error p{
+
+.page-error p {
     font-size: 40px;
+}
+
+/* CONTACT FORM
+-------------------------------------------------- */
+.btn-send {
+    width: 150px;
 }
 
 
 /* STYLING
 -------------------------------------------------- */
-.main-underline-long h1, .main-underline-short h1, .section-underline h3{
+.main-underline-long h1, .main-underline-short h1, .section-underline h3 {
     text-transform: uppercase;
 }
 

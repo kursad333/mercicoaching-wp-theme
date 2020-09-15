@@ -13,14 +13,14 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top topnav" role="navigation">
         <div class="container">
-            <a class="navbar-brand brand" href="<?php get_bloginfo('wpurl');?>">
-                <?php 
-                    echo get_theme_mod('merci-nav-menu-brand-line1');
+            <a class="navbar-brand brand" href="http://143.176.236.108:8888/wordpress" style="">
+                <?php
+                echo get_theme_mod('merci-nav-menu-brand-line1');
                 ?>
                 <br>
                 <?php
-                    echo get_theme_mod('merci-nav-menu-brand-line2')
-                ;?>
+                echo get_theme_mod('merci-nav-menu-brand-line2');
+                ?>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1"
@@ -39,7 +39,6 @@
                 'walker' => new WP_Bootstrap_Navwalker(),
             ));
             ?>
-
         </div>
     </nav>
 </header>

@@ -3,11 +3,11 @@ WORDPRESS THEME - MERCI COACHING
 TO DO:
 
 opt CUSTOMIZER:
--Let the user choose a color scheme and apply these colors on the underlines and page border
+scrap-Let the user choose a color scheme and apply these colors on the underlines and page border
 
 BLOG:
 done - Custom sizes to choose from when making a new blog post IMAGES
-- set the 'lees meer' on a fixed position
+scrap- set the 'lees meer' on a fixed position
 done- user uploaded images must be in a fluid image bootstrap thing
 
 opt HEADER:
