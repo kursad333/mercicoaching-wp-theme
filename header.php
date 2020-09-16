@@ -13,7 +13,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top topnav" role="navigation">
         <div class="container">
-            <a class="navbar-brand brand" href="http://143.176.236.108:8888/wordpress" style="">
+            <a class="navbar-brand brand" href="http://localhost:8888/wordpress" style="">
                 <?php
                 echo get_theme_mod('merci-nav-menu-brand-line1');
                 ?>
